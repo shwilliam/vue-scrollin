@@ -1,7 +1,10 @@
 {
   "name": "vue-scrollin",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.1.0",
+  "description": "Scroll-in text component for Vue",
+  "repository": "https://github.com/shwilliam/vue-scrollin",
+  "author": "William L <w-lindvall@outlook.com>",
+  "license": "MIT",
 
   "main": "dist/v-scrollin.umd.js",
   "module": "dist/v-scrollin.esm.js",
