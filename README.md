@@ -2,6 +2,8 @@
 
 > Scroll-in text component for Vue
 
+'vue-scrollin' is a Vue component that scrolls through various characters on mount before revealing the correct text.
+
 ## Install
 Install the package from npm with your favorite package manager (eg. `yarn add vue-scrollin` or `npm i vue-scrollin`).
 
@@ -17,10 +19,21 @@ Simply import the component as you would any other and use it in your template.
 import VScrollin from 'vue-scrollin'
 
 export default {
-  ...,
+  ...
   components: {
     "v-scrollin": VScrollin
   }
 };
 </script>
 ```
+
+## Props
+Easily customise the animation with optional props.
+
+| Property name | Type   | Default | Description                             |
+|---------------|-------:|:-------:|-----------------------------------------|
+| characters    | Array  | a-z     | Characters scrolled through             |
+| misses        | Number | 4       | Number of scrolls before correct letter |
+| speed         | Number | 80      | Delay of each letter scoll (ms)         |
+
+[![vue-scrollin demo](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/5v1wlj1z0p?module=%2Fsrc%2FApp.vue)
