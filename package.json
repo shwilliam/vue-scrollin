@@ -1,28 +1,42 @@
 {
   "name": "vue-scrollin",
-  "version": "0.1.0",
-  "description": "Scroll-in text component for Vue",
-  "repository": "https://github.com/shwilliam/vue-scrollin",
+  "version": "0.1.1",
+  "description": "Vue scroll-in text component",
   "author": "William L <w-lindvall@outlook.com>",
   "license": "MIT",
-
   "main": "dist/v-scrollin.umd.js",
   "module": "dist/v-scrollin.esm.js",
   "unpkg": "dist/v-scrollin.min.js",
   "browser": {
     "./sfc": "src/v-scrollin.vue"
   },
-
   "scripts": {
     "build": "npm run build:unpkg & npm run build:es & npm run build:umd",
     "build:umd": "rollup --config build/rollup.config.js --format umd --file dist/v-scrollin.umd.js",
     "build:es": "rollup --config build/rollup.config.js --format es --file dist/v-scrollin.esm.js",
     "build:unpkg": "rollup --config build/rollup.config.js --format iife --file dist/v-scrollin.min.js"
   },
-
+  "keywords": [
+    "vue",
+    "component",
+    "scrollin",
+    "scroll",
+    "text",
+    "cycle",
+    "letters",
+    "random",
+    "typewriter"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shwilliam/vue-scrollin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shwilliam/vue-scrollin/issues"
+  },
+  "homepage": "https://github.com/shwilliam/vue-scrollin#readme",
   "dependencies": {
   },
-
   "devDependencies": {
     "minimist": "^1.2.0",
     "rollup": "^0.57.1",
