@@ -83,9 +83,12 @@
         if (this.workingIndices.length < 3 && !this.amountFinished) {
           this.workingIndices.push(this.workingIndices.length);
         }
-        if (this.scrollingText === this.finishedText) {
+        if (
+          this.scrollingText === this.finishedText &&
+          this.currentMisses === this.misses
+        ) {
           timers.clearInterval(this.scroll);
-        } else if (++this.currentMisses >= this.misses) {
+        } else if (++this.currentMisses === this.misses) {
           this.scrollingText = this.replace(
             this.scrollingText,
             this.amountFinished,
