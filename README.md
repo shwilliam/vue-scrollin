@@ -8,20 +8,22 @@
 Install the package from npm with your favorite package manager (eg. `yarn add vue-scrollin` or `npm i vue-scrollin`).
 
 ## Usage
-Simply import the component as you would any other and use it in your template.
+Simply import and register the component and use it in your template. For example,
 
 ```
 <template>
-  <v-scrollin>this text will scroll</v-scrollin>
+  <VScrollin>
+    this text will scroll
+  </VScrollin>
 </template>
 
 <script>
 import VScrollin from 'vue-scrollin'
 
 export default {
-  ...
+  [...]
   components: {
-    "v-scrollin": VScrollin
+    VScrollin
   }
 };
 </script>
