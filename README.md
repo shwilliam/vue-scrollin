@@ -1,8 +1,10 @@
-![scrollin title gif](https://user-images.githubusercontent.com/38357771/42121309-2af34540-7c5f-11e8-9ad9-4b7bcbb485a2.gif)
+![scrollin](https://user-images.githubusercontent.com/38357771/42121309-2af34540-7c5f-11e8-9ad9-4b7bcbb485a2.gif)
 
 > Scroll-in text component for Vue
 
 'vue-scrollin' is a Vue component that scrolls through various characters on mount before revealing the correct text.
+
+[![vue-scrollin demo](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/5v1wlj1z0p?module=%2Fsrc%2FApp.vue)
 
 ## Install
 Install the package from npm with your favorite package manager (eg. `yarn add vue-scrollin` or `npm i vue-scrollin`).
@@ -38,4 +40,12 @@ Easily customise the animation with optional props.
 | misses        | Number | 4       | Number of scrolls before correct letter |
 | speed         | Number | 80      | Delay of each letter scoll (ms)         |
 
-[![vue-scrollin demo](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/5v1wlj1z0p?module=%2Fsrc%2FApp.vue)
+## Contributing
+
+This project is open to and encourages contributions! Feel free to discuss any bug fixes/features in the [issues](https://github.com/shwilliam/vue-scrollin/issues). If you wish to work on this project:
+
+1.  [Fork the project](https://github.com/shwilliam/vue-scrollin/archive/master.zip)
+2.  Create your feature branch (`git checkout -b new-feature-branch`)
+3.  Commit your changes (`git commit -am 'add new feature'`)
+4.  Push to the branch (`git push origin new-feature-branch`)
+5.  [Submit a pull request!](https://github.com/shwilliam/vue-scrollin/pull/new/master)
