@@ -1,10 +1,10 @@
-![scrollin](https://user-images.githubusercontent.com/38357771/42121309-2af34540-7c5f-11e8-9ad9-4b7bcbb485a2.gif)
+![vue-scrollin](https://user-images.githubusercontent.com/38357771/54847524-efa67a80-4cb4-11e9-8d4c-1b830f03bedd.gif)
 
 > Scroll-in text component for Vue
 
 'vue-scrollin' is a Vue component that scrolls through various characters on mount before revealing the correct text.
 
-[![vue-scrollin demo](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/5v1wlj1z0p?module=%2Fsrc%2FApp.vue)
+[![Try it on CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/5v1wlj1z0p?module=%2Fsrc%2FApp.vue)
 
 ## Install
 Install the package from npm with your favorite package manager (eg. `yarn add vue-scrollin` or `npm i vue-scrollin`).
@@ -44,7 +44,7 @@ Easily customise the animation with optional props.
 
 This project is open to and encourages contributions! Feel free to discuss any bug fixes/features in the [issues](https://github.com/shwilliam/vue-scrollin/issues). If you wish to work on this project:
 
-1.  [Fork the project](https://github.com/shwilliam/vue-scrollin/archive/master.zip)
+1.  [Fork the project](https://github.com/shwilliam/vue-scrollin)
 2.  Create your feature branch (`git checkout -b new-feature-branch`)
 3.  Commit your changes (`git commit -am 'add new feature'`)
 4.  Push to the branch (`git push origin new-feature-branch`)
