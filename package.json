@@ -11,6 +11,7 @@
     "./sfc": "src/v-scrollin.vue"
   },
   "scripts": {
+    "test": "mocha",
     "lint": "eslint --ext .js,.vue src",
     "build": "npm run build:unpkg & npm run build:es & npm run build:umd",
     "build:umd": "rollup --config build/rollup.config.js --format umd --file dist/v-scrollin.umd.js",
@@ -46,6 +47,7 @@
     "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-vue": "^5.2.2",
     "minimist": "^1.2.0",
+    "mocha": "^6.1.3",
     "rollup": "^0.57.1",
     "rollup-plugin-buble": "^0.19.2",
     "rollup-plugin-uglify-es": "0.0.1",
