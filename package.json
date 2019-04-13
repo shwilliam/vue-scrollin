@@ -11,6 +11,7 @@
     "./sfc": "src/v-scrollin.vue"
   },
   "scripts": {
+    "lint": "eslint --ext .js,.vue src",
     "build": "npm run build:unpkg & npm run build:es & npm run build:umd",
     "build:umd": "rollup --config build/rollup.config.js --format umd --file dist/v-scrollin.umd.js",
     "build:es": "rollup --config build/rollup.config.js --format es --file dist/v-scrollin.esm.js",
@@ -35,9 +36,15 @@
     "url": "https://github.com/shwilliam/vue-scrollin/issues"
   },
   "homepage": "https://github.com/shwilliam/vue-scrollin#readme",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.17.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-vue": "^5.2.2",
     "minimist": "^1.2.0",
     "rollup": "^0.57.1",
     "rollup-plugin-buble": "^0.19.2",
