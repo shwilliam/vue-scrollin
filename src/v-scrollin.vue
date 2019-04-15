@@ -83,14 +83,10 @@ export default {
         this.currentMisses = 0
         if (++this.amountFinished >= this.finishedText.length - 2) {
           this.workingIndices
-            .sort(function (a, b) {
-              return a - b
-            })
+            .sort((a, b) => a - b)
             .shift()
         } else {
-          this.workingIndices.sort(function (a, b) {
-            return a - b
-          })[0] =
+          this.workingIndices.sort((a, b) => a - b)[0] =
             this.amountFinished + 3
         }
       }
