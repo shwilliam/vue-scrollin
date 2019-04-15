@@ -34,11 +34,11 @@ export default {
 ## Props
 Easily customise the animation with optional props.
 
-| Property name | Type   | Default | Description                             |
-|---------------|-------:|:-------:|-----------------------------------------|
-| characters    | Array  | a-z     | Characters scrolled through             |
-| misses        | Number | 4       | Number of scrolls before correct letter |
-| speed         | Number | 80      | Delay of each letter scoll (ms)         |
+| Property name | Type          | Default | Description                             |
+|---------------|--------------:|:-------:|-----------------------------------------|
+| characters    | String/Array  | a-z     | Characters scrolled through             |
+| misses        | Number        | 4       | Number of scrolls before correct letter |
+| speed         | Number        | 80      | Delay of each letter scoll (ms)         |
 
 ## Contributing
 
