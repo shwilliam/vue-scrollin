@@ -6,6 +6,7 @@
 
 <script>
 import { setInterval, clearInterval } from 'timers'
+import { getRandomLetter, replace } from './lib'
 
 export default {
   name: 'VScrollin',
@@ -49,18 +50,9 @@ export default {
     fillRandomLetters () {
       const startingLetters = []
       for (let n = 0; n < this.finishedText.length; n++) {
-        startingLetters.push(this.getRandomLetter())
+        startingLetters.push(getRandomLetter(this.characters))
       }
       this.scrollingText = startingLetters.join('')
-    },
-    getRandomLetter () {
-      return this.characters[Math.floor(Math.random() * this.characters.length)]
-    },
-    replace (str, i, replacement) {
-      if (!replacement) return str
-      return (
-        str.substr(0, i) + replacement + str.substr(i + replacement.length)
-      )
     },
     tick () {
       for (
@@ -68,10 +60,10 @@ export default {
         n < this.amountFinished + this.workingIndices.length;
         n++
       ) {
-        this.scrollingText = this.replace(
+        this.scrollingText = replace(
           this.scrollingText,
           n,
-          this.getRandomLetter()
+          getRandomLetter(this.characters)
         )
       }
       if (this.workingIndices.length < 3 && !this.amountFinished) {
@@ -83,7 +75,7 @@ export default {
       ) {
         clearInterval(this.scroll)
       } else if (++this.currentMisses === this.misses) {
-        this.scrollingText = this.replace(
+        this.scrollingText = replace(
           this.scrollingText,
           this.amountFinished,
           this.finishedText[this.amountFinished]
